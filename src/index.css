@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 * {
   margin: 0;
   padding: 0;
@@ -58,5 +60,22 @@ body {
   justify-content: space-between;
   background-color: red;
   margin-bottom: 10px;
+  border: 1px solid black;
+}
+
+.board {
+  width: 600px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 1px solid black;
+}
+
+.board__ceil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  cursor: pointer;
   border: 1px solid black;
 }
